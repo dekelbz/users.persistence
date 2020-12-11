@@ -8,7 +8,7 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
     User getByEmail(String email);
 
-    long deleteByEmail(String email);
+    void deleteByEmail(String email);
 
     Id getIdByEmail(String email);
 
